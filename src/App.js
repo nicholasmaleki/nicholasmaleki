@@ -150,7 +150,8 @@ function App() {
           <br></br>
           <input name="lastName" type="text" placeholder="Last Name" />
           <br></br>
-          <input name="phoneNumber" type="text" placeholder="Phone Number" />
+          <input name="phoneNumber" type="text" placeholder="Phone Number" /> 
+          {/* https://www.npmjs.com/package/react-phone-number-input */}
           <br></br>
           <input name="emailAddress" type="email" placeholder="Email Address" />
           <br></br>
