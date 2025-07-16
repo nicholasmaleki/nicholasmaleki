@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+html {
+  margin: 0;
+  padding: 0;
+  max-height: 100vh;
   min-height: 100vh;
+  height:100vh;
+  max-width: 100vw;
+  position:fixed;
+  overflow: hidden;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position:fixed;
+}
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain;
+}
+
+#particles canvas{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.centerdock { 
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  min-height: 100vh;
+  transform: translate(0%, -8%);
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  /* pointer-events: none; */
+}
+
+.img{
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: italic;
   color: white;
+  text-shadow: 0em 0em .3em #ffffff;
 }
 
-.App-link {
-  color: #61dafb;
+
+#logo {
+  margin: 0 auto;
+  padding: 12px;
+  width: 100%;
+  /* pointer-events: none;  */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#buttons {
+  flex: 1 1 33%
+}
+
+/* .app{
+  pointer-events: none;
+} */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  display:inline-block;
+}
+
+
+.container hr {
+  width: 100%;
+  content: '';
+  height: 0; 
+  margin: 0; 
+  border: 0; 
 }
