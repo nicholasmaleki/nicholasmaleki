@@ -16,7 +16,7 @@ const maskGenerator = createDefaultMaskGenerator('9999-9999-9999-9999');
 
 
 function App() {
-  const [value, setValue] = React.useState('');
+  const [value, setValue] = React.useState(0);
 
   // Handle User Input logging to console
   const handleSubmit = (e) => {
@@ -158,8 +158,9 @@ function App() {
           <br></br>
           <MaskedInput
             maskGenerator={maskGenerator}
-            value={value}
-            onChange={setValue}
+            value={value || ''}
+            //defaultValue={""}
+            //onChange={setValue} //Fix for the "A component is changing an uncontrolled input to be controlled Error."
             name="spidrPin"
             type="text"
             placeholder="Secret 16 digit pin"
