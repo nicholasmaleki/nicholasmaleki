@@ -152,7 +152,7 @@ function App() {
           <br></br>
           <input name="phoneNumber" type="text" placeholder="Phone Number" />
           <br></br>
-          <input name="emailAddress" type="text" placeholder="Email Address" />
+          <input name="emailAddress" type="email" placeholder="Email Address" />
           <br></br>
           <input name="costGuess" type="text" placeholder="Guess the air fryer’s cost" />
           <br></br>
