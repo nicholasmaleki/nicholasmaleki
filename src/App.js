@@ -127,40 +127,6 @@ function App() {
   return (
     <div className="App">
       <div id="particles" onClick={null}>
-        {/* <Particles
-          params={{
-            particles: {
-              opacity: 1,
-              color: "#4794a4",
-              number: {
-                value: 180
-              },
-              size: {
-                value: 5,
-                random: true
-              },
-              line_linked: {
-                distance: 200,
-              },
-              move: {
-                speed: 1
-              },
-            },
-            background: {
-              image: "linear-gradient(135deg, #28292a -100%, #28292a 50%)"
-            },
-            interactivity: {
-              events: {
-                onhover: {
-                  enable: true,
-                  mode: "repulse"
-                }
-              }
-            }
-          }}
-        >
-        </Particles> */}
-
         <Particles
           id="tsparticles"
           particlesLoaded={particlesLoaded}
