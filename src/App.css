@@ -103,6 +103,10 @@ button {
   padding: 8px 10px;
 }
 
+button:active{
+   background-color: #397885;
+}
+
 .container hr {
   width: 100%;
   content: '';

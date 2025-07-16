@@ -23,7 +23,7 @@ function App() {
     e.preventDefault()
     const formData = new FormData(e.currentTarget);
     for (let [key, value] of formData.entries()) {
-      console.log(key, value)
+      console.log(key + ":", value)
     }
   };
 
@@ -126,7 +126,7 @@ function App() {
 
   return (
     <div className="App">
-      <div id="particles" onClick={null}>
+      <div id="particles" onClick={null}> 
         <Particles
           id="tsparticles"
           particlesLoaded={particlesLoaded}
